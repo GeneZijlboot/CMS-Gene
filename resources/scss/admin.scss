@@ -1,7 +1,91 @@
-.login-wrapper{
-    background-color: purple;
-    h1{
-        color: green;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.login-wrapper {
+    padding: 30px 30px;
+    border-radius: 10px;
+    background-color: #68BCDC;
+
+    .image-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    
+        img {
+            height: 100px;
+        }
     }
-    color: yellow;
+    
+
+    .header {
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 20px;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        
+        border-bottom: solid 3px white;
+    }
+    
+
+    .username,
+    .password{
+        margin-bottom: 20px;
+        input{
+            background-repeat: no-repeat;
+            background-position: left 0px;
+            background-size: contain;
+
+            width: 100%;
+            height: 35px;
+            padding-left: 40px;
+            border-radius: 10px;
+            border: 0;
+        }
+    }
+    .username {
+        input{
+            background-image: url('../../public/img/username.png');
+        }
+    }
+
+    .password {
+        input{
+            background-image: url('../../public/img/password.png');
+        }
+    }
+
+    .forgot{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 50px;
+
+        a{
+            text-decoration: none;
+            color: white
+        }
+    }
+
+    .button-wrapper {
+        input[type="submit"] {
+            background-color: #235784;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            border-radius: 10px;
+            border: none; /* Remove default input border */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            display: block; /* Make it a block element to take full width */
+            width: 100%; /* Take full width of its container */
+        }
+    }
 }
